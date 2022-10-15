@@ -8,15 +8,15 @@ full_name: "Bao Rian"
 profile_picture: "profile.png"
 cv: "cv.pdf"
 # set to false if you don't want to show your blog
-blog: true
+blog: false
 
 socials:
     # twitter: "YOUR_NAME"
-    github: "YOUR_NAME"
+    # github: "YOUR_NAME"
     # facebook: "YOUR_NAME"
     # linkedin: "YOUR_NAME"
     # twitch: "YOUR_NAME"
-    google_scholar: "https://scholar.google.com/citations?hl=zh-CN&user=v8G7pHoAAAAJ"
+    google_scholar: "https://www.researchgate.net/profile/Rian-Bao"
 
 interests:
     - Computational Linguistics

@@ -91,11 +91,10 @@ h2 code {
 }
 
 .about .socials {
-    font-size: small;
+    font-size: large;
     margin-bottom: 1%;
     margin-top: 1%;
 }
-
 .about .socials a {
     margin-left: .6%;
 }

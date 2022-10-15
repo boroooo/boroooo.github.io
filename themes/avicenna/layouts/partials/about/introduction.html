@@ -47,10 +47,17 @@
         {{ $cv := $aboutPage.Params.cv }}
         {{ $blog := $aboutPage.Params.blog}}
 
+        {{if $cv}}
+        <a class="main_color" href='{{$cv}}' target="_blank">
+            <span class="main_color" id="title">CV</span>
+        </a>
+        {{end}}
 
         {{if $google_scholar}}
-        <a class="main_color" rel="me" href='https://scholar.google.com/{{$google_scholar}}' target="_blank">
-            <i class="ai ai-2x ai-google-scholar academic_icons_customize"></i>
+        <a href='{{$google_scholar}}' target="_blank">
+            <div class="main_color dates col-md-auto justify-content-end" font-size=>
+                Research Gate
+            </div>
         </a>
         {{end}}
 
@@ -81,12 +88,6 @@
         {{ if $twitch }}
         <a class="main_color" rel="me" href='https://twitch.com/{{$twitch}}' target="_blank">
             <i data-feather="twitch"></i>
-        </a>
-        {{end}}
-
-        {{if $cv}}
-        <a class="main_color" href='{{$cv}}' target="_blank">
-            <i class="ai ai-2x ai-cv academic_icons_customize"></i>
         </a>
         {{end}}
 
