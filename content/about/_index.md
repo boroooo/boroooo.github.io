@@ -48,8 +48,8 @@ academia:
         degree: "B.A."
         institution: 'East China Normal University'
         major: 'English'
-        start_date: '2019'
-        end_date: '2015'
+        start_date: '2015'
+        end_date: '2019'
         other_info: 'graduated with Outstanding Graduation Dissertation Award, supervised by Prof. Jisheng Zhang!'
 ---
 
