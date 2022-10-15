@@ -1,17 +1,18 @@
 ---
-title: "Your Paper Name Goes Here"
+title: "The Contribution of Phonological and Fluency Factors to Chinese L2 Comprehensibility Ratings: A Case Study of Urdu-speaking Learners."
 authors:
-- Your Full Name
-- Another Researcher
-date: "2018-09-01"
+- Rian Bao
+- Linkai Peng
+- Yingming Gao
+- Jinsong Zhang
+date: "2022-09-01"
 
-publication: "Journal of Machine Learning"
+publication: "(ISCSLP 2022)"
 
 links:
-    pdf: https://github.com/hadisinaee/avicenna
-    code: https://github.com/hadisinaee/avicenna
-    slides: https://github.com/hadisinaee/avicenna
-    video: https://github.com/hadisinaee/avicenna
+    pdf: "pdfs/Contribution_RianBao.pdf"
 
 ---
 
+
+[See the wiki page for tutorial!](https://github.com/hadisinaee/avicenna/wiki)

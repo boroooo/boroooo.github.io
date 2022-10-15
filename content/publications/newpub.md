@@ -1,17 +1,16 @@
 ---
-title: "Your Paper Name Goes Here"
+title: "An Exploratory Study for Quantifying the Contextual Information for Successful Chinese L2 Speech Comprehension."
 authors:
-- Your Full Name
-- Another Researcher
-date: "2018-09-01"
+- Rian Bao
+- Linkai Peng
+- Yuchen Yan
+- Jinsong Zhang
+date: "2022-09-01"
 
-publication: "Journal of Machine Learning"
+publication: "(ISCSLP 2022)"
 
 links:
-    pdf: https://github.com/hadisinaee/avicenna
-    code: https://github.com/hadisinaee/avicenna
-    slides: https://github.com/hadisinaee/avicenna
-    video: https://github.com/hadisinaee/avicenna
+    pdf: "pdfs/Exploratory_RianBao.pdf"
 
 ---
 

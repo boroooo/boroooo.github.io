@@ -1,5 +1,5 @@
 ---
-title: "News"
+title: "Job Experiences"
 date: 2020-10-20T18:55:12+03:30
 headless: true
 weight: 2

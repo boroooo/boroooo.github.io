@@ -4,7 +4,7 @@ date: 2020-10-20T17:51:47+03:30
 draft: false
 headless: true
 
-full_name: "Nuchgud BOROON"
+full_name: "Bao Rian"
 profile_picture: "profile.png"
 cv: "cv.pdf"
 # set to false if you don't want to show your blog
@@ -19,48 +19,39 @@ socials:
     google_scholar: "https://scholar.google.com/citations?hl=zh-CN&user=v8G7pHoAAAAJ"
 
 interests:
-    - Speech Perception
-    - Distributed Systems
-    - Data Streaming Platforms
-    - Large-Scale Data Processing Platforms
+    - Computational Linguistics
+    - Speech Comprehension
+    - Second Language Comprehensibility
+    - Psycholinguistics
+
+Language background: 
+    First language: Mongolian (traditional)
+    Second language: Chinese & English
+    Third language: Spanish
 
 affiliations:
     - affiliation:
-        title: "Ph.D."
-        name: "Stanford University"
-        email: "email@cs.stanford.edu"
-    - affiliation:
-        title: "CEO & Co-Founder"
-        name: "The Coolest Startup In the World"
-        email: "email@mycoolstartup.ai"
+        title: "M.S."
+        name: "Beijing Language and Culture University"
+        email: "boroooo@163.com"
 
 academia:
     - course:
-        degree: "Ph.D."
-        institution:  "Stanford University"
-        major: "Data Systems"
-        start_date: "2021"
+        degree: "M.A."
+        institution: 'Beijing Language and Culture University'
+        major: 'Speech Engineering'
+        start_date: '2020'
+        end_date: '2023'
+
     - course:
-        degree: "M.Sc."
-        institution: 'Sharif University of Technology'
-        major: 'Software Engineering'
-        start_date: '2013'
-        end_date: '2016'
-        other_info: 'graduated without first class honor, supervised by Prof. Very Cool!'
-    - course:
-        degree: "B.Sc."
-        institution: 'University of Kashan'
-        major: 'Software Engineering'
-        minor: 'Statistics'
-        start_date: '2009'
-        end_date: '2013'
-        other_info: 'graduated with first class honor, supervised by Prof.  Cool!'
+        degree: "B.A."
+        institution: 'East China Normal University'
+        major: 'English'
+        start_date: '2019'
+        end_date: '2015'
+        other_info: 'graduated with Outstanding Graduation Dissertation Award, supervised by Prof. Jisheng Zhang!'
 ---
 
-**Donec** sollicitudin, [ante][1] pulvinar tincidunt luctus, dolor mauris lobortis ex, id tincidunt metus risus nec ex. Curabitur magna mauris, facilisis vitae porttitor vitae, tincidunt sed mi. In at dui lectus. Integer ante arcu, vestibulum fermentum ante eu, maximus maximus quam. Curabitur placerat cursus posuere. Phasellus dui lorem, varius a augue non, eleifend accumsan mauris. Aenean varius posuere feugiat. In hac habitasse platea dictumst. Aenean quis ex quis nisl consequat fermentum in vitae nunc. Proin consectetur ac nulla in tempus. Maecenas enim nisi, pulvinar sit amet fermentum eget, ultrices vitae enim. Etiam vel sollicitudin felis.
-
-
-Donec sollicitudin, ante pulvinar tincidunt luctus, dolor mauris lobortis ex, id tincidunt metus risus nec ex. Curabitur magna mauris, facilisis vitae porttitor vitae, 
-
+Hi, this is Rian Bao. I am a master’s student in Beijing Language and Culture University. My research interest lies in how defective speech is processed by human. To explore this topic, I studied the relationship between computational linguistics, second language (L2) speech, and psycholinguistic data. Recently, I adopted a mutual-information-based functional load model to quantify the L2 Chinese comprehensibility.
 
 [1]: ahadsfsa.com

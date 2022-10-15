@@ -1,15 +1,18 @@
 ---
-title: "Your Paper Name Goes Here"
+title: "The Importance of Lexical Tone for Sentence Understanding: Utilizing Functional Load Principle to Simulate Comprehension Process."
 authors:
-- Your Full Name
-- Author Name
-date: "2016-09-01"
+- Rian Bao
+- Linkai Peng
+- Yuchen Yan
+- Jinsong Zhang
+date: "2022-09-01"
 
-publication: "Journal of Machine Learning"
+publication: "(IALP 2022)"
 
 links:
-    pdf: https://github.com/hadisinaee/avicenna
-    code: https://github.com/hadisinaee/avicenna
-    slides: https://github.com/hadisinaee/avicenna
-    video: https://github.com/hadisinaee/avicenna
+    pdf: "pdfs/importance_RianBao.pdf"
+
 ---
+
+
+[See the wiki page for tutorial!](https://github.com/hadisinaee/avicenna/wiki)
