@@ -37,7 +37,7 @@ affiliations:
 
 academia:
     - course:
-        degree: "M.A."
+        degree: "M.A. of Linguistics"
         institution: 'Beijing Language and Culture University'
         major: 'Speech Engineering'
         start_date: '2020'
