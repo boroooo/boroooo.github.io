@@ -6,7 +6,7 @@ headless: true
 
 full_name: "Bao Rian"
 profile_picture: "profile.png"
-cv: "cv.pdf"
+cv: "pdfs/Baorian_CV.pdf"
 # set to false if you don't want to show your blog
 blog: false
 
@@ -53,6 +53,4 @@ academia:
         other_info: 'graduated with Outstanding Graduation Dissertation Award, supervised by Prof. Jisheng Zhang!'
 ---
 
-Hi, this is Rian Bao. I am a master’s student in Beijing Language and Culture University. My research interest lies in how defective speech is processed by human. To explore this topic, I studied the relationship between computational linguistics, second language (L2) speech, and psycholinguistic data. Recently, I adopted a mutual-information-based functional load model to quantify the L2 Chinese comprehensibility.
-
-[1]: ahadsfsa.com
+Hi, this is Rian Bao. I am a master’s student in Beijing Language and Culture University. My research interest lies in how defective speech is processed by human. To explore this topic, I studied the relationship between computational linguistics, second language (L2) speech, and psycholinguistic data. Recently, I adopted a mutual-information-based functional load model to quantify the information loss of L2 Chinese speech. Then I explored the relation between information loss and comprehensibility.
