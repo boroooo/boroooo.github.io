@@ -31,15 +31,16 @@ Language background:
 
 affiliations:
     - affiliation:
-        title: "M.S."
+        title: "M.S. of Arts"
+        major: "Language intelligence and technology"
         name: "Beijing Language and Culture University"
         email: "boroooo@163.com"
 
 academia:
     - course:
-        degree: "M.A. of Linguistics"
+        degree: "M.A."
         institution: 'Beijing Language and Culture University'
-        major: 'Speech Engineering'
+        major: 'Language intelligence and technology'
         start_date: '2020'
         end_date: '2023'
 
