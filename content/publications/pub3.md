@@ -8,6 +8,8 @@ date: "2022-09-01"
 
 publication: "(IALP 2022)"
 
+doi: "DOI: 10.1109/IALP57159.2022.9961277"
+
 links:
     pdf: "pdfs/Contrbutions_RianBao.pdf"
 

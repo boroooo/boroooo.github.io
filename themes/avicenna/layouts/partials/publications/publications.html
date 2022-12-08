@@ -42,6 +42,15 @@
                 {{end}}
 
             </div>
+            
+            {{ $doi := $page.Params.doi }}
+            {{ if $doi }}
+            <div class="section-2 text-muted w-100">
+                <span>
+                    {{$doi}}
+                </span>
+
+            </div>
 
             {{ $links := $page.Params.links }}
             {{ if $links }}
