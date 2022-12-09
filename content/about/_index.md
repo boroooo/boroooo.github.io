@@ -31,7 +31,7 @@ Language background:
 
 affiliations:
     - affiliation:
-        title: "M.S. of Arts"
+        title: "Master of Arts"
         major: "Language intelligence and technology"
         name: "Beijing Language and Culture University"
         email: "boroooo@163.com"
