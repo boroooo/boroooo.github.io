@@ -38,6 +38,13 @@ affiliations:
 
 academia:
     - course:
+        degree: "Ph.D"
+        institution: 'The University of Texas at Austin'
+        major: 'Neurolinguistics'
+        start_date: '2023'
+        end_date: ''
+        
+    - course:
         degree: "M.A."
         institution: 'Beijing Language and Culture University'
         major: 'Language intelligence and technology'
