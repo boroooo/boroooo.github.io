@@ -50,6 +50,7 @@ academia:
         major: 'Language intelligence and technology'
         start_date: '2020'
         end_date: '2023'
+        other_info: 'graduated with Outstanding Graduation Dissertation Award, supervised by Prof. Jinsong Zhang!'
 
     - course:
         degree: "B.A."
