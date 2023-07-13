@@ -32,7 +32,7 @@ Language background:
 affiliations:
     - affiliation:
         title: "Ph.D candidate"
-        major: "Neurolinguistics"
+        major: "Psycholinguistics"
         name: "The University of Texas at Austin"
         email: "boroooo@163.com"
 
@@ -40,7 +40,7 @@ academia:
     - course:
         degree: "Ph.D"
         institution: 'The University of Texas at Austin'
-        major: 'Neurolinguistics'
+        major: 'Psycholinguistics'
         start_date: '2023'
         end_date: ''
         
