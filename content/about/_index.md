@@ -31,9 +31,9 @@ Language background:
 
 affiliations:
     - affiliation:
-        title: "Master of Arts"
-        major: "Language intelligence and technology"
-        name: "Beijing Language and Culture University"
+        title: "Ph.D candidate"
+        major: "Neurolinguistics"
+        name: "The University of Texas at Austin"
         email: "boroooo@163.com"
 
 academia:
@@ -60,5 +60,5 @@ academia:
         other_info: 'graduated with Outstanding Graduation Dissertation Award, supervised by Prof. Jisheng Zhang!'
 ---
 
-Hi, this is Baorian. I am a PhD candidate in Linguistics at The University of Texas at Austin. My research interest lies in how defective speech is processed by human. To explore this topic, I studied the relationship between computational linguistics, second language (L2) speech, and psycholinguistic data. Recently, I adopted a mutual-information-based functional load model to quantify the information loss of L2 Chinese speech. Then I explored the relation between information loss and comprehensibility.
+Hi, this is Baorian. I am a Ph.D candidate in Linguistics at The University of Texas at Austin. My research interest lies in how defective speech is processed by human. To explore this topic, I studied the relationship between computational linguistics, second language (L2) speech, and psycholinguistic data. Recently, I adopted a mutual-information-based functional load model to quantify the information loss of L2 Chinese speech. Then I explored the relation between information loss and comprehensibility.
 
