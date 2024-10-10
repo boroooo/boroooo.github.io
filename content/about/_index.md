@@ -16,9 +16,9 @@ socials:
     # facebook: "YOUR_NAME"
     # linkedin: "YOUR_NAME"
     # twitch: "YOUR_NAME"
-    UT Neurolinguistics Lab: https://liberalarts.utexas.edu/linguistics/research-labs/neurolinguistics-lab.html
+    # UT Neurolinguistics Lab: https://liberalarts.utexas.edu/linguistics/research-labs/neurolinguistics-lab.html
     google_scholar: "https://www.researchgate.net/profile/Rian-Bao"
-    Email: baorian@utexas.edu
+    # Email: baorian@utexas.edu
 
 interests:
     - Psycholinguistics
@@ -64,5 +64,6 @@ academia:
         other_info: 'graduated with Outstanding Graduation Dissertation Award, supervised by Prof. Jisheng Zhang!'
 ---
 
-Hi, this is Baorian. I am a Ph.D. student in Linguistics at The University of Texas at Austin. My broad research interest is in speech perception and its neural correlates. Now I am focusing on how the human brain processes acoustic information in the speech signal.
+Hi, this is Baorian. I am a Ph.D. student in Linguistics at The University of Texas at Austin. I am currently working at the neurolinguistics lab. My broad research interest is in speech perception and its neural correlates. Now I am focusing on how the human brain processes acoustic information in the speech signal.
+Lab website: https://liberalarts.utexas.edu/linguistics/research-labs/neurolinguistics-lab.html
 
