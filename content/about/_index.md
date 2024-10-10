@@ -37,9 +37,9 @@ affiliations:
         title: "Ph.D student"
         major: "Psycholinguistics"
         name: "The University of Texas at Austin"
-        email: "boroooo@163.com"
+        email: "baorian@utexas.edu"
 
-education:
+academia:
     - course:
         degree: "Ph.D"
         institution: 'The University of Texas at Austin'
