@@ -8,7 +8,7 @@ headless: true
 show_news_icons: true
 default_news_icon: "briefcase"
 
-num_news: 5
+num_news: 4
 
 news_items:
 - text: "Nio, Data Processor Intern"
