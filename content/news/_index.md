@@ -8,11 +8,11 @@ headless: true
 show_news_icons: true
 default_news_icon: "briefcase"
 
-num_news: 4
+num_news: 5
 
 news_items:
 - text: "Nio, Data Processor Intern"
-  extra_text: "March, 2023 – July, 2023"
+  extra_text: "March, 2023 – PRE"
 - text: "ByteDance AI-Lab, English data linguist"
   extra_text: "March, 2022 – July, 2022"
 - text: "DataBaker, Annotator"
