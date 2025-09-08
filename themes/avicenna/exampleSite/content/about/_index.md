@@ -8,7 +8,7 @@ full_name: "YOUR_NAME"
 profile_picture: "profile.png"
 cv: "cv.pdf"
 # set to false if you don't want to show your blog
-blog: true
+blog: false
 
 socials:
     twitter: "YOUR_NAME"
