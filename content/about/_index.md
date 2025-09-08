@@ -6,7 +6,7 @@ headless: true
 
 full_name: "Baorian Nuchged(Rian Bao)"
 profile_picture: "profile.png"
-cv: "pdfs/Baorian_CV2022.pdf"
+cv: "pdfs/Baorian_CV2025.pdf"
 # set to false if you don't want to show your blog
 blog: true
 
