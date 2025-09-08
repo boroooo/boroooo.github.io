@@ -1,26 +1,39 @@
-baseURL = "https://boroooo.github.io"
+baseURL = "https://boroooo.github.io/"
+languageCode = "en-us"
+title = "SCHOLAR | BAORIAN"
+theme = "avicenna"
+enableEmoji = true
 
-# set your your own ga token here.
+# Google Analytics（可留空或换成你的真实 ID）
 googleAnalytics = "UA/G-123123-12"
 
-languageCode = "en-us"
-
-# for using avicenna you need to set the themes to 'avicenna'
-enableEmoji = true
-theme = "avicenna"
-
-# This is your page title, it appears in your tab
-title = "SCHOLAR | BAORIAN"
-
-# number of posts to show on the blog page
-paginate = 10
+[pagination]
+  pagerSize = 10
 
 [markup]
-[markup.tableOfContents]
-endLevel = 3
-ordered = false
-startLevel = 1
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 1
 
 [params]
-# it is used for the copy-right section of your page
-name = " BAORIAN"
+  name = "BAORIAN"
+
+# 顶部菜单（把 Projects 放出来）
+[menu]
+  [[menu.main]]
+    name = "Projects"
+    url  = "/projects/"
+    weight = 30
+  [[menu.main]]
+    name = "Publications"
+    url  = "/publications/"
+    weight = 20
+  [[menu.main]]
+    name = "Blog"
+    url  = "/blog/"
+    weight = 40
+  [[menu.main]]
+    name = "News"
+    url  = "/news/"
+    weight = 50
