@@ -17,7 +17,7 @@ socials:
     # linkedin: "YOUR_NAME"
     # twitch: "YOUR_NAME"
     # UT Neurolinguistics Lab: https://liberalarts.utexas.edu/linguistics/research-labs/neurolinguistics-lab.html
-    google_scholar: "https://www.researchgate.net/profile/Rian-Bao"
+    google_scholar: "https://scholar.google.com/citations?user=S0La8xwAAAAJ"
     # Email: baorian@utexas.edu
 
 interests:
