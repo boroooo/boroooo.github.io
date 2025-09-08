@@ -8,7 +8,7 @@ full_name: "Baorian Nuchged(Rian Bao)"
 profile_picture: "profile.png"
 cv: "pdfs/Baorian_CV2022.pdf"
 # set to false if you don't want to show your blog
-blog: false
+blog: true
 
 socials:
     # twitter: "YOUR_NAME"
