@@ -20,4 +20,6 @@ During processing of connected speech, such as sentences or spoken narratives, l
 
 
 <img src="cs_process-1.png" alt="Alt Text" title="Optional Title" width="300px">
+{{< figure src="cs_process-1.png" title="Optional Title" width="100px" >}}
+
 
