@@ -272,11 +272,11 @@ h2 code {
 }
 
 .img-sm {
-  max-height: 300px;
+  max-width: auto;
 }
 
 .img-sm img{
-  max-height:300px
+  max-width: auto
 }
 
 .img-lg {
