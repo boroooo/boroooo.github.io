@@ -14,9 +14,9 @@ During processing of connected speech, such as sentences or spoken narratives, l
 
 
 
-![CSE and DER Values](spectrogram_figure-1.png){: style="width:200px"}
+![CSE and DER Values](spectrogram_figure-1.png){: style="width:100px"}
 
-![Compressed Sensing Process](cs_process-1.png){: style="width:200px"}
+![Compressed Sensing Process](cs_process-1.png){: style="width:100px"}
 
 
 
