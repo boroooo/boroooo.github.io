@@ -14,8 +14,7 @@ During processing of connected speech, such as sentences or spoken narratives, l
 
 
 
-
-{{< figure src="cs_process-1.png" title="Optional Title" width="100px" >}}
-
+![Alt Text ](spectrogram_figure.png "CSE and DER Values") {weight: 500px}
+![Alt Text ](cs_process-1.png "Compressed Sensing Process") {weight: 500px}
 
 
