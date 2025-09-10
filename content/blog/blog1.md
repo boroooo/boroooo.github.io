@@ -19,4 +19,5 @@ During processing of connected speech, such as sentences or spoken narratives, l
 ![Compressed Sensing Process](cs_process-1.png){: style="width:300px"}
 
 
+<img src="cs_process-1.png" alt="Alt Text" title="Optional Title" width="300px">
 
