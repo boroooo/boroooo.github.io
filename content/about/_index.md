@@ -64,5 +64,8 @@ academia:
         other_info: 'graduated with Outstanding Graduation Dissertation Award, supervised by Prof. Jisheng Zhang!'
 ---
 
-Hi, I'm Baorian (I prefer Boroon [bɔɾɔːn]). I am a third-year Ph.D. student in Linguistics at The University of Texas at Austin advised by Dr. Fernando Llanos. I am currently working at the [neurolinguistics lab](https://fllanoslucas.wixsite.com/neuroling-lab). My broad research interest is in speech perception and its neural correlates. Now I am focusing on how the human brain processes acoustic information in the speech signal.
+Hi, I’m Baorian Nuchged (I prefer Boroon [bɔɾɔːn]). I am a third-year Ph.D. student in Linguistics at The University of Texas at Austin, where I am advised by Dr. Fernando Llanos and currently work in the [Neurolinguistics Lab](https://fllanoslucas.wixsite.com/neuroling-lab)
+
+My research lies at the intersection of phonetics, neurolinguistics, and computational modeling, with a broad interest in how humans perceive speech and how these processes are represented in the brain. At present, I focus on how the auditory system encodes the speech signal and transforms acoustic information into meaningful units. In particular, I am interested in whether spectrally localized changes can predict robust neural tracking.
+
 
