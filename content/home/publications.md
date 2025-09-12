@@ -7,7 +7,7 @@ weight: 3
 content_type: 'publications'
 section_settings:
     show_section: true
-    title: 'Recent Publications'
+    title: 'Recent Publications and Presentations'
     subtitle: 'see my research gate for the latest list'    
 ---
 
