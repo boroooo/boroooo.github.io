@@ -8,8 +8,9 @@ authors:
 date: "2025-09-11"
 
 publication: "2025 SNL"
+
 links:
-    pdf: "pdfs/SNL_poster_D17.pdf"
+    pdf: "pdfs/SNL_poster_D71.pdf"
 
 ---
 
