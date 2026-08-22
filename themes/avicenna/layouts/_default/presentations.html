@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<section class="content-section" id="presentations">
+    <h2>Presentations</h2>
+    {{ $presentations := .Resources.ByType "page" }}
+    {{ if gt (len $presentations) 0 }}
+    <div class="publication-list">
+        {{ range sort $presentations "Params.date" "desc" }}
+        <article class="list-item">
+            <h3>{{ .Params.title }}</h3>
+            <p class="item-meta">
+                {{ substr (.Params.date.Format "2006-01-02") 0 4 }}{{ with .Params.venue }}, {{ . }}{{ end }}
+            </p>
+            {{ with .Params.authors }}
+            <p class="item-authors">{{ delimit . ", " }}</p>
+            {{ end }}
+            {{ with .Params.links }}
+            <p class="item-links">
+                {{ range $label, $url := . }}{{ if $url }}<a href="{{ if hasPrefix $url "http" }}{{ $url }}{{ else }}/{{ $url }}{{ end }}" target="_blank">{{ title $label }}</a>{{ end }}{{ end }}
+            </p>
+            {{ end }}
+        </article>
+        {{ end }}
+    </div>
+    {{ end }}
+</section>
+
+{{ end }}
