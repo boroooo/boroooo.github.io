@@ -1,49 +1,106 @@
 {{ define "main" }}
 
-{{ $headlessPage := .Site.GetPage "/home" }}
+{{ $about := .Site.GetPage "about" }}
+{{ $publicationBundle := .Site.GetPage "publications" }}
+{{ $publications := $publicationBundle.Resources.ByType "page" }}
+{{ $projects := where .Site.RegularPages "Section" "projects" }}
+{{ $cv := $about.Params.cv }}
 
-{{ range where ($headlessPage.Resources.ByType "page") "Params.section_settings.show_section" true}}
+<header class="site-header">
+    <a class="site-brand" href="{{ .Site.BaseURL }}">{{ $about.Params.full_name }}</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#teachings">Teachings</a>
+        <a href="#experiments">Experiments</a>
+        <a href="#publications">Publications</a>
+        {{ if $cv }}<a href="{{ $cv }}" target="_blank">CV</a>{{ end }}
+    </nav>
+</header>
 
-{{ $content_type := .Params.content_type }}
-{{ if not $content_type }}
-NO CONTENT TYPE FOUND. Set content_type = "{{.Params.title | lower }}"
-{{ end }}
+<main class="academic-page">
+    <aside class="profile-panel">
+        <img class="profile-photo" src="images/profile.png" alt="Baorian Nuchged" />
 
-{{ $title := .Params.title }}
-{{ if .Params.section_settings.title }}
-{{ $title = .Params.section_settings.title }}
-{{ end }}
+        <h1>{{ $about.Params.full_name }}</h1>
 
-{{ $subtitle := "" }}
-{{ if .Params.section_settings.subtitle }}
-{{ $subtitle = .Params.section_settings.subtitle }}
-{{ end }}
+        {{ range $about.Params.affiliations }}
+        <p class="profile-title">{{ .affiliation.title }} in {{ .affiliation.major }}</p>
+        <p class="profile-affiliation">{{ .affiliation.name }}</p>
+        {{ end }}
+        <ul class="profile-links">
+            {{ range $about.Params.affiliations }}
+            {{ if .affiliation.email }}<li><a href="mailto:{{ .affiliation.email }}">{{ .affiliation.email }}</a></li>{{ end }}
+            {{ end }}
+            {{ with index $about.Params.socials "google_scholar" }}<li><a href="{{ . }}" target="_blank">Google Scholar</a></li>{{ end }}
+            {{ if $cv }}<li><a href="{{ $cv }}" target="_blank">CV</a></li>{{ end }}
+        </ul>
+    </aside>
 
-{{ if or $title (eq $content_type "about")}}
-<div class="row w-100">
-    <div class="col w-100">
-        {{if or $title $subtitle}}
-        <div class="row w-100">
-            <div class="col w-100">
-                {{if $title }}
-                <h3 class="row  w-100 section-title main_color"> {{ $title }} </h3>
+    <div class="content-panel">
+        <section class="content-section" id="about">
+            {{ $about.Content }}
+            {{ if $cv }}
+            <p>You can view my <a href="{{ $cv }}" target="_blank">CV here</a>.</p>
+            {{ end }}
+        </section>
+
+        <section class="content-section" id="projects">
+            <h2>Projects</h2>
+            {{ if gt (len $projects) 0 }}
+            <div class="project-list">
+                {{ range sort $projects "Params.date" "desc" }}
+                <article class="list-item">
+                    <h3>{{ .Params.title }}</h3>
+                    {{ with .Params.period }}<p class="item-meta">{{ . }}</p>{{ end }}
+                    {{ with .Content }}<div class="item-body">{{ . }}</div>{{ end }}
+                    {{ with .Params.links }}
+                    <p class="item-links">
+                        {{ range $label, $url := . }}{{ if $url }}<a href="{{ $url }}" target="_blank">{{ $label }}</a>{{ end }}{{ end }}
+                    </p>
+                    {{ end }}
+                </article>
                 {{ end }}
-
-                {{ if $subtitle}}
-                <h6 class="row w-100 section-subtitle  text-muted"> {{ $subtitle }} </h6>
-                {{end}}
             </div>
-        </div>
-        {{end}}
+            {{ end }}
+        </section>
 
-        {{- partial (printf "%s/%s.html" $content_type $content_type) . -}}
+        <section class="content-section" id="teachings">
+            <h2>Teachings</h2>
+            <p>Teaching information will be updated here.</p>
+        </section>
+
+        <section class="content-section" id="experiments">
+            <h2>Experiments</h2>
+            <p>Experiment links and study information will be updated here.</p>
+        </section>
+
+        <section class="content-section" id="publications">
+            <h2>Publications</h2>
+            {{ if gt (len $publications) 0 }}
+            <div class="publication-list">
+                {{ range sort $publications "Params.date" "desc" }}
+                <article class="list-item">
+                    <h3>{{ .Params.title }}</h3>
+                    <p class="item-meta">
+                        {{ substr (.Params.date.Format "2006-01-02") 0 4 }}{{ with .Params.publication }}, {{ . }}{{ end }}
+                    </p>
+                    {{ with .Params.authors }}
+                    <p class="item-authors">{{ delimit . ", " }}</p>
+                    {{ end }}
+                    {{ with .Params.doi }}
+                    <p class="item-doi">{{ . }}</p>
+                    {{ end }}
+                    {{ with .Params.links }}
+                    <p class="item-links">
+                        {{ range $label, $url := . }}{{ if $url }}<a href="{{ $url }}" target="_blank">{{ $label }}</a>{{ end }}{{ end }}
+                    </p>
+                    {{ end }}
+                </article>
+                {{ end }}
+            </div>
+            {{ end }}
+        </section>
     </div>
-</div>
+</main>
 
-{{end}}
-
-<!-- this is for range -->
-{{end}}
-
-<!-- this is for block -->
 {{end}}

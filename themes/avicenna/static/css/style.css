@@ -1,16 +1,19 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    color: #071013;
+    color: #222;
+    background: #fff;
+    font-size: 16px;
+    line-height: 1.62;
 }
 
 a {
-    color: #8C1515;
+    color: #2f6fab;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #050517;
+    color: #1a4d7a;
 }
 
 h2 code {
@@ -285,4 +288,211 @@ h2 code {
 
 .img-lg img{
   max-height:500px
+}
+
+body.container {
+    max-width: 1180px;
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 18px 0 16px;
+    margin-bottom: 34px;
+}
+
+.site-brand {
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.site-brand:hover {
+    color: #111;
+    text-decoration: none;
+}
+
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 18px;
+    font-size: 14px;
+}
+
+.site-nav a {
+    color: #555;
+    text-decoration: none;
+}
+
+.site-nav a:hover {
+    color: #2f6fab;
+    text-decoration: underline;
+}
+
+.academic-page {
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 54px;
+    align-items: start;
+}
+
+.profile-panel {
+    position: sticky;
+    top: 24px;
+}
+
+.profile-photo {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 22px;
+}
+
+.profile-panel h1 {
+    color: #222;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 0 0 10px;
+}
+
+.profile-title,
+.profile-affiliation {
+    color: #555;
+    margin: 0 0 10px;
+}
+
+.profile-links {
+    list-style: none;
+    padding: 0;
+    margin: 18px 0 0;
+    color: #555;
+}
+
+.profile-links li {
+    margin-bottom: 7px;
+}
+
+.content-panel {
+    max-width: 760px;
+}
+
+.content-section {
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 30px;
+    margin-bottom: 34px;
+    scroll-margin-top: 26px;
+}
+
+.content-section:last-child {
+    border-bottom: 0;
+}
+
+.content-section h2 {
+    color: #222;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 18px;
+}
+
+.content-section p {
+    margin: 0 0 16px;
+}
+
+.project-list,
+.publication-list {
+    display: grid;
+    gap: 22px;
+}
+
+.list-item h3 {
+    color: #222;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin: 0 0 5px;
+}
+
+.item-meta,
+.item-authors,
+.item-doi {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.item-body {
+    color: #333;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.item-body figure {
+    margin: 16px 0 0;
+}
+
+.item-body img {
+    max-width: 100%;
+    height: auto;
+}
+
+.item-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+footer {
+    border-top: 1px solid #e6e6e6;
+    margin-top: 28px;
+    padding: 18px 0;
+}
+
+@media (max-width: 760px) {
+    body.container {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 28px;
+    }
+
+    .site-nav {
+        justify-content: flex-start;
+        gap: 12px;
+    }
+
+    .academic-page {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .profile-panel {
+        position: static;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-panel h1 {
+        font-size: 25px;
+    }
 }
