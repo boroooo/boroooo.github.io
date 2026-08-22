@@ -434,17 +434,22 @@ body.container {
 }
 
 .mongolian-name {
+    display: inline-flex;
+    gap: 0.12em;
+    align-items: flex-start;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+    font-family: "Noto Serif Mongolian", "Noto Sans Mongolian", "Mongolian Baiti", serif;
+}
+
+.mongolian-name span {
     display: inline-block;
     -webkit-writing-mode: vertical-lr;
     writing-mode: vertical-lr;
     text-orientation: mixed;
     white-space: nowrap;
-    unicode-bidi: isolate;
     font-feature-settings: "vert" 1;
-    height: 4.6em;
-    line-height: 1.1;
-    vertical-align: middle;
-    font-family: "Noto Serif Mongolian", "Noto Sans Mongolian", "Mongolian Baiti", serif;
+    line-height: 1;
 }
 
 .project-list,

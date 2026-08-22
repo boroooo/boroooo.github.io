@@ -64,6 +64,6 @@ academia:
         other_info: 'graduated with Outstanding Graduation Dissertation Award, supervised by Prof. Jisheng Zhang!'
 ---
 
-Hi, I’m Baorian Nuchged (traditional Mongolian script: {{< mongolian >}}ᠪᠣᠷᠣᠭᠠᠨ<br>ᠨᠢᠴᠦᠭᠦᠳ{{< /mongolian >}}, pronounced as [bɔ&#39;ɾɔːn nut͡ç&#39;gəd]). I am a third-year Ph.D. student in Linguistics at The University of Texas at Austin, where I am advised by Dr. Fernando Llanos and currently work in the [Neurolinguistics Lab](https://fllanoslucas.wixsite.com/neuroling-lab)
+Hi, I’m Baorian Nuchged (traditional Mongolian script: {{< mongolian >}}<span>ᠪᠣᠷᠣᠭᠠᠨ</span><span>ᠨᠢᠴᠦᠭᠦᠳ</span>{{< /mongolian >}}, pronounced as [bɔ&#39;ɾɔːn nut͡ç&#39;gəd]). I am a third-year Ph.D. student in Linguistics at The University of Texas at Austin, where I am advised by Dr. Fernando Llanos and currently work in the [Neurolinguistics Lab](https://fllanoslucas.wixsite.com/neuroling-lab)
 
 My research lies at the intersection of phonetics, neurolinguistics, and computational modeling, with a broad interest in how humans perceive speech and how these processes are represented in the brain. At present, I focus on how the auditory system encodes the speech signal and transforms acoustic information into meaningful units. In particular, I am interested in whether spectrally localized changes can predict robust neural tracking.
