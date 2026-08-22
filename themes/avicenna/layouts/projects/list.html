@@ -7,7 +7,6 @@
         {{ range sort .Pages "Params.date" "desc" }}
         <article class="list-item">
             <h3>{{ .Params.title }}</h3>
-            {{ with .Params.period }}<p class="item-meta">{{ . }}</p>{{ end }}
             {{ with .Content }}<div class="item-body">{{ . }}</div>{{ end }}
             {{ with .Params.links }}
             <p class="item-links">
