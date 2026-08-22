@@ -7,4 +7,4 @@ link:
 
 > I study how moment-to-moment changes in acoustic information shape cortical speech encoding. Using EEG, information-theoretic measures, and computational modeling, I investigate which portions of the speech signal are represented most robustly in the brain.
 
-![Speech signal, envelope, EEG, and high-information frames](/images/figure1A_new.png)
+![Spectrogram, CSE, envelope, and DER indices](/blog/blog1/spectrogram_figure-1.png)
