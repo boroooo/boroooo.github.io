@@ -7,7 +7,7 @@
     <h1>{{ $about.Params.full_name }}</h1>
 
     {{ range $about.Params.affiliations }}
-    <p class="profile-title">{{ .affiliation.title }} in {{ .affiliation.major }}</p>
+    <p class="profile-title">{{ .affiliation.title }}{{ with .affiliation.major }} in {{ . }}{{ end }}</p>
     <p class="profile-affiliation">{{ .affiliation.name }}</p>
     {{ end }}
 
