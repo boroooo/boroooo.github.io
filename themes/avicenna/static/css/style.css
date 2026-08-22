@@ -433,6 +433,15 @@ body.container {
     margin: 0 0 16px;
 }
 
+.mongolian-name {
+    display: inline-block;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    line-height: 1;
+    vertical-align: middle;
+    font-family: "Noto Serif Mongolian", "Noto Sans Mongolian", "Mongolian Baiti", serif;
+}
+
 .project-list,
 .publication-list {
     display: grid;
