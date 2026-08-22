@@ -386,23 +386,24 @@ body.container {
 
 .profile-meta li {
     display: grid;
-    grid-template-columns: 18px minmax(0, 1fr);
+    grid-template-columns: 16px minmax(0, 1fr);
     align-items: center;
-    column-gap: 10px;
+    column-gap: 9px;
     color: #444;
 }
 
 .profile-meta svg,
 .profile-meta i {
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
     color: #5f6368;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1;
 }
 
 .profile-meta .ai-google-scholar {
     color: #5f6368;
+    font-size: 14px;
 }
 
 .content-panel {
