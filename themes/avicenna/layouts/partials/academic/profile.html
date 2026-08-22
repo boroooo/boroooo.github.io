@@ -1,0 +1,21 @@
+{{ $about := .Site.GetPage "about" }}
+{{ $cv := $about.Params.cv }}
+
+<aside class="profile-panel">
+    <img class="profile-photo" src="/images/profile.png" alt="{{ $about.Params.full_name }}" />
+
+    <h1>{{ $about.Params.full_name }}</h1>
+
+    {{ range $about.Params.affiliations }}
+    <p class="profile-title">{{ .affiliation.title }} in {{ .affiliation.major }}</p>
+    <p class="profile-affiliation">{{ .affiliation.name }}</p>
+    {{ end }}
+
+    <ul class="profile-links">
+        {{ range $about.Params.affiliations }}
+        {{ if .affiliation.email }}<li><a href="mailto:{{ .affiliation.email }}">{{ .affiliation.email }}</a></li>{{ end }}
+        {{ end }}
+        {{ with index $about.Params.socials "google_scholar" }}<li><a href="{{ . }}" target="_blank">Google Scholar</a></li>{{ end }}
+        {{ if $cv }}<li><a href="/{{ $cv }}" target="_blank">CV</a></li>{{ end }}
+    </ul>
+</aside>

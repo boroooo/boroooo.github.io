@@ -4,7 +4,13 @@
 {{- partial "core/head.html" . -}}
 
 <body class="container d-flex flex-column min-vh-100">
-    {{- block "main" . }}{{- end }}
+    {{- partial "academic/header.html" . -}}
+    <main class="academic-page">
+        {{- partial "academic/profile.html" . -}}
+        <div class="content-panel">
+            {{- block "main" . }}{{- end }}
+        </div>
+    </main>
 
     {{- partial "core/footer.html" . -}}
     {{- partial "core/script.html" . -}}

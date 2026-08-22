@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<section class="content-section" id="projects">
+    <h2>Projects</h2>
+    {{ if gt (len .Pages) 0 }}
+    <div class="project-list">
+        {{ range sort .Pages "Params.date" "desc" }}
+        <article class="list-item">
+            <h3>{{ .Params.title }}</h3>
+            {{ with .Params.period }}<p class="item-meta">{{ . }}</p>{{ end }}
+            {{ with .Content }}<div class="item-body">{{ . }}</div>{{ end }}
+            {{ with .Params.links }}
+            <p class="item-links">
+                {{ range $label, $url := . }}{{ if $url }}<a href="{{ if hasPrefix $url "http" }}{{ $url }}{{ else }}/{{ $url }}{{ end }}" target="_blank">{{ $label }}</a>{{ end }}{{ end }}
+            </p>
+            {{ end }}
+        </article>
+        {{ end }}
+    </div>
+    {{ end }}
+</section>
+
+{{ end }}

@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<section class="content-section" id="teachings">
+    <h2>Teachings</h2>
+    {{ .Content }}
+    {{ if gt (len .Pages) 0 }}
+    <div class="project-list">
+        {{ range sort .Pages "Params.date" "desc" }}
+        <article class="list-item">
+            <h3>{{ .Title }}</h3>
+            {{ with .Content }}<div class="item-body">{{ . }}</div>{{ end }}
+        </article>
+        {{ end }}
+    </div>
+    {{ end }}
+</section>
+
+{{ end }}

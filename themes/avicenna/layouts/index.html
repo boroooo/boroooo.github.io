@@ -1,106 +1,13 @@
 {{ define "main" }}
 
 {{ $about := .Site.GetPage "about" }}
-{{ $publicationBundle := .Site.GetPage "publications" }}
-{{ $publications := $publicationBundle.Resources.ByType "page" }}
-{{ $projects := where .Site.RegularPages "Section" "projects" }}
 {{ $cv := $about.Params.cv }}
 
-<header class="site-header">
-    <a class="site-brand" href="{{ .Site.BaseURL }}">{{ $about.Params.full_name }}</a>
-    <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#projects">Projects</a>
-        <a href="#teachings">Teachings</a>
-        <a href="#experiments">Experiments</a>
-        <a href="#publications">Publications</a>
-        {{ if $cv }}<a href="{{ $cv }}" target="_blank">CV</a>{{ end }}
-    </nav>
-</header>
-
-<main class="academic-page">
-    <aside class="profile-panel">
-        <img class="profile-photo" src="images/profile.png" alt="Baorian Nuchged" />
-
-        <h1>{{ $about.Params.full_name }}</h1>
-
-        {{ range $about.Params.affiliations }}
-        <p class="profile-title">{{ .affiliation.title }} in {{ .affiliation.major }}</p>
-        <p class="profile-affiliation">{{ .affiliation.name }}</p>
-        {{ end }}
-        <ul class="profile-links">
-            {{ range $about.Params.affiliations }}
-            {{ if .affiliation.email }}<li><a href="mailto:{{ .affiliation.email }}">{{ .affiliation.email }}</a></li>{{ end }}
-            {{ end }}
-            {{ with index $about.Params.socials "google_scholar" }}<li><a href="{{ . }}" target="_blank">Google Scholar</a></li>{{ end }}
-            {{ if $cv }}<li><a href="{{ $cv }}" target="_blank">CV</a></li>{{ end }}
-        </ul>
-    </aside>
-
-    <div class="content-panel">
-        <section class="content-section" id="about">
-            {{ $about.Content }}
-            {{ if $cv }}
-            <p>You can view my <a href="{{ $cv }}" target="_blank">CV here</a>.</p>
-            {{ end }}
-        </section>
-
-        <section class="content-section" id="projects">
-            <h2>Projects</h2>
-            {{ if gt (len $projects) 0 }}
-            <div class="project-list">
-                {{ range sort $projects "Params.date" "desc" }}
-                <article class="list-item">
-                    <h3>{{ .Params.title }}</h3>
-                    {{ with .Params.period }}<p class="item-meta">{{ . }}</p>{{ end }}
-                    {{ with .Content }}<div class="item-body">{{ . }}</div>{{ end }}
-                    {{ with .Params.links }}
-                    <p class="item-links">
-                        {{ range $label, $url := . }}{{ if $url }}<a href="{{ $url }}" target="_blank">{{ $label }}</a>{{ end }}{{ end }}
-                    </p>
-                    {{ end }}
-                </article>
-                {{ end }}
-            </div>
-            {{ end }}
-        </section>
-
-        <section class="content-section" id="teachings">
-            <h2>Teachings</h2>
-            <p>Teaching information will be updated here.</p>
-        </section>
-
-        <section class="content-section" id="experiments">
-            <h2>Experiments</h2>
-            <p>Experiment links and study information will be updated here.</p>
-        </section>
-
-        <section class="content-section" id="publications">
-            <h2>Publications</h2>
-            {{ if gt (len $publications) 0 }}
-            <div class="publication-list">
-                {{ range sort $publications "Params.date" "desc" }}
-                <article class="list-item">
-                    <h3>{{ .Params.title }}</h3>
-                    <p class="item-meta">
-                        {{ substr (.Params.date.Format "2006-01-02") 0 4 }}{{ with .Params.publication }}, {{ . }}{{ end }}
-                    </p>
-                    {{ with .Params.authors }}
-                    <p class="item-authors">{{ delimit . ", " }}</p>
-                    {{ end }}
-                    {{ with .Params.doi }}
-                    <p class="item-doi">{{ . }}</p>
-                    {{ end }}
-                    {{ with .Params.links }}
-                    <p class="item-links">
-                        {{ range $label, $url := . }}{{ if $url }}<a href="{{ $url }}" target="_blank">{{ $label }}</a>{{ end }}{{ end }}
-                    </p>
-                    {{ end }}
-                </article>
-                {{ end }}
-            </div>
-            {{ end }}
-        </section>
-    </div>
-</main>
+<section class="content-section" id="about">
+    {{ $about.Content }}
+    {{ if $cv }}
+    <p>You can view my <a href="/{{ $cv }}" target="_blank">CV here</a>.</p>
+    {{ end }}
+</section>
 
 {{end}}
