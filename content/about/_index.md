@@ -4,7 +4,7 @@ date: 2020-10-20T17:51:47+03:30
 draft: false
 headless: true
 
-full_name: "Baorian Nuchged"
+full_name: "Baorian Nuchged (ᠪᠣᠷᠣᠭᠠᠨ ᠨᠢᠴᠦᠭᠦᠳ)"
 profile_picture: "profile.png"
 cv: "pdfs/Baorian_Nuchged_cv.pdf"
 # set to false if you don't want to show your blog
