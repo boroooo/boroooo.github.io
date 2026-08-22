@@ -11,11 +11,24 @@
     <p class="profile-affiliation">{{ .affiliation.name }}</p>
     {{ end }}
 
-    <ul class="profile-links">
-        {{ range $about.Params.affiliations }}
-        {{ if .affiliation.email }}<li><a href="mailto:{{ .affiliation.email }}">{{ .affiliation.email }}</a></li>{{ end }}
+    <ul class="profile-meta">
+        <li>
+            <i data-feather="map-pin" aria-hidden="true"></i>
+            <span>Austin, TX, USA</span>
+        </li>
+        <li>
+            <i data-feather="briefcase" aria-hidden="true"></i>
+            <span>University of Texas at Austin</span>
+        </li>
+        <li>
+            <i data-feather="link-2" aria-hidden="true"></i>
+            <a href="https://liberalarts.utexas.edu/linguistics/gradstudents/bn7289" target="_blank">Website</a>
+        </li>
+        {{ with index $about.Params.socials "google_scholar" }}
+        <li>
+            <i class="ai ai-google-scholar" aria-hidden="true"></i>
+            <a href="{{ . }}" target="_blank">Google Scholar</a>
+        </li>
         {{ end }}
-        {{ with index $about.Params.socials "google_scholar" }}<li><a href="{{ . }}" target="_blank">Google Scholar</a></li>{{ end }}
-        {{ if $cv }}<li><a href="/{{ $cv }}" target="_blank">CV</a></li>{{ end }}
     </ul>
 </aside>

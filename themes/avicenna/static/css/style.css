@@ -371,15 +371,38 @@ body.container {
     margin: 0 0 10px;
 }
 
-.profile-links {
+.profile-links,
+.profile-meta {
     list-style: none;
     padding: 0;
     margin: 18px 0 0;
     color: #555;
 }
 
-.profile-links li {
+.profile-links li,
+.profile-meta li {
     margin-bottom: 7px;
+}
+
+.profile-meta li {
+    display: grid;
+    grid-template-columns: 18px minmax(0, 1fr);
+    align-items: center;
+    column-gap: 10px;
+    color: #444;
+}
+
+.profile-meta svg,
+.profile-meta i {
+    width: 16px;
+    height: 16px;
+    color: #5f6368;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.profile-meta .ai-google-scholar {
+    color: #5f6368;
 }
 
 .content-panel {
