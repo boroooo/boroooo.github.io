@@ -435,9 +435,14 @@ body.container {
 
 .mongolian-name {
     display: inline-block;
+    -webkit-writing-mode: vertical-lr;
     writing-mode: vertical-lr;
     text-orientation: mixed;
-    line-height: 1;
+    white-space: nowrap;
+    unicode-bidi: isolate;
+    font-feature-settings: "vert" 1;
+    height: 7.8em;
+    line-height: 1.1;
     vertical-align: middle;
     font-family: "Noto Serif Mongolian", "Noto Sans Mongolian", "Mongolian Baiti", serif;
 }
