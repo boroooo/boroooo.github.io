@@ -5,7 +5,7 @@ draft: false
 headless: true
 
 full_name: "Baorian Nuchged"
-profile_picture: "profile.png"
+profile_picture: "profile_pic.jpg"
 cv: "pdfs/Baorian_Nuchged_cv.pdf"
 # set to false if you don't want to show your blog
 blog: true
