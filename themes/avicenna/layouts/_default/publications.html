@@ -5,11 +5,11 @@
     {{ $publications := .Resources.ByType "page" }}
     {{ if gt (len $publications) 0 }}
     <div class="publication-list">
-        {{ range sort $publications "Params.date" "desc" }}
+        {{ range sort $publications "Params.weight" "asc" }}
         <article class="list-item">
             <h3>{{ .Params.title }}</h3>
             <p class="item-meta">
-                {{ substr (.Params.date.Format "2006-01-02") 0 4 }}{{ with .Params.publication }}, {{ . }}{{ end }}
+                {{ with .Params.status }}{{ . }}{{ else }}{{ .Params.year }}{{ end }}{{ with .Params.publication }}, {{ . }}{{ end }}
             </p>
             {{ with .Params.authors }}
             <p class="item-authors">{{ delimit . ", " }}</p>

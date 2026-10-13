@@ -6,7 +6,7 @@
 {{if gt (len $rscPages) 0}}
 <div class="publications row w-100">
     <div class="col w-100">
-        {{ range $page := $rscPages}}
+        {{ range $page := sort $rscPages "Params.weight" "asc" }}
         <div class="publication row  w-100">
 
             <div class="section-1 w-100">
@@ -15,7 +15,7 @@
                 </span>
 
                 <span class="text-muted publication-date">
-                    {{substr ($page.Params.date.Format "2006-01-02") 0 4}},
+                    {{ with $page.Params.status }}{{ . }}{{ else }}{{ $page.Params.year }}{{ end }},
                 </span>
 
                 <span class="text-muted publication-name">

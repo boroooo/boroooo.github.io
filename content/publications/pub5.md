@@ -1,17 +1,12 @@
 ---
-title: "An Investigation of Applying Large Language Models to Spoken Language Learning."
+title: "An Investigation of Applying Large Language Models to Spoken Language Learning"
 authors:
-- Yingming Gao
-- Baorian Nuchged
-- Ya Li
-- Linkai Peng
-date: "2023-12-26"
-
-publication: "Applied Sciences"
-
-doi: "DOI: https://doi.org/10.3390/app14010224"
-
+  - Yingming Gao
+  - Baorian Nuchged
+  - Ya Li
+  - Linkai Peng
+year: 2024
+weight: 7
+publication: "Applied Sciences 14(1), 224"
+doi: "DOI: 10.3390/app14010224"
 ---
-
-
-[See the wiki page for tutorial!](https://github.com/hadisinaee/avicenna/wiki)
